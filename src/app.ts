@@ -1,5 +1,5 @@
 const message = "Hello TypeScript"
-console.log(message, language)
+console.log(message)
 
 //Primitive Types, Union Types, Inferred Type
 
