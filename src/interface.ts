@@ -15,7 +15,7 @@ let Person: person = {
 interface obje extends person {
     name: string,
     age: number,
-    phone: number | string | string[],
+    phone: string | string[],
     email: string,
     favorite: {
         type: 'food' | 'player' | 'book'
@@ -26,7 +26,7 @@ interface obje extends person {
 let object1: obje = {
     name: 'ami',
     age: 25,
-    phone: '02151456412',
+    phone: ['02151456412'],
     email: 'ojnhj@gmail.com',
     favorite: [
         {
@@ -35,4 +35,18 @@ let object1: obje = {
         }
     ],
     hasjob: false
+}
+
+//access the object1's phone property's string array
+typeof object1.phone === 'string' || object1.phone.map(val => val.toLowerCase)
+
+!(typeof object1.phone === 'string') && object1.phone.map(val => val.toLowerCase)
+
+Array.isArray(object1.phone) && object1.phone.map(val => val.toLowerCase)
+
+if (Array.isArray(object1.phone)) {
+    object1.phone.map(val => val.toLowerCase)
+}
+else {
+    object1.phone.toLowerCase
 }

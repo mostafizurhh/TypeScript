@@ -1,6 +1,6 @@
 "use strict";
 var message = "Hello TypeScript";
-console.log(message, language);
+console.log(message);
 //Primitive Types, Union Types, Inferred Type
 //single line dynamic primitive/inferred type
 var myname = 'ami';
