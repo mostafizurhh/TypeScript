@@ -2,6 +2,10 @@
 type ami = string; /* to create your own type write the type keyword and then the type you want */
 let mi: ami = 'mi'
 
+type Auth = {
+    isloggedIn: boolean
+}
+
 //there could be one or more types for dynamic type
 type tumi = string | number | boolean
 let um: tumi = true
@@ -17,7 +21,7 @@ let ADd: fn = (num1, num2, num3 = 0) => {
 }
 const result7 = ADd(10, 25, 29)
 
-//object aliases
+//object aliases with extends functionality
 type obj = {
     name: string,
     age: number,
@@ -27,7 +31,7 @@ type obj = {
         type: 'food' | 'player' | 'book'
         value: string
     }[]
-}
+} & Auth;
 
 let object: obj = {
     name: 'ami',
@@ -39,5 +43,6 @@ let object: obj = {
             type: 'food',
             value: 'vat'
         }
-    ]
+    ],
+    isloggedIn: true
 }
