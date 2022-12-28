@@ -1,10 +1,10 @@
 "use strict";
-var Person = {
+let Person = {
     name: 'ami',
     email: 'ami@gmail.com',
     hasjob: false
 };
-var object1 = {
+let object1 = {
     name: 'ami',
     age: 25,
     phone: ['02151456412'],
@@ -18,11 +18,11 @@ var object1 = {
     hasjob: false
 };
 //access the object1's phone property's string array
-typeof object1.phone === 'string' || object1.phone.map(function (val) { return val.toLowerCase; });
-!(typeof object1.phone === 'string') && object1.phone.map(function (val) { return val.toLowerCase; });
-Array.isArray(object1.phone) && object1.phone.map(function (val) { return val.toLowerCase; });
+typeof object1.phone === 'string' || object1.phone.map(val => val.toLowerCase);
+!(typeof object1.phone === 'string') && object1.phone.map(val => val.toLowerCase);
+Array.isArray(object1.phone) && object1.phone.map(val => val.toLowerCase);
 if (Array.isArray(object1.phone)) {
-    object1.phone.map(function (val) { return val.toLowerCase; });
+    object1.phone.map(val => val.toLowerCase);
 }
 else {
     object1.phone.toLowerCase;

@@ -1,7 +1,7 @@
 "use strict";
 var _a;
 //Object and Enums in TypeScript
-var player;
+let player;
 player = {
     name: 'messi',
     age: 36,
@@ -10,7 +10,7 @@ player = {
     country: 'argentina'
 };
 player.age = player.age + 5; /* to change any optional property value */
-player.clubs = (_a = player.clubs) === null || _a === void 0 ? void 0 : _a.map(function (club) { return club.toUpperCase(); }); /* to change any optional array property value */
+player.clubs = (_a = player.clubs) === null || _a === void 0 ? void 0 : _a.map(club => club.toUpperCase()); /* to change any optional array property value */
 /* ***************************************** */
 var friends;
 (function (friends) {

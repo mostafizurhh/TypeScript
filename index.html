@@ -15,7 +15,8 @@
     </main>
     <script src="dist/app.js"></script>
     <script src="dist/array&Tuples.js"></script>
-    <script src="dist/class.js"></script>
+    <script type="module" src="dist/class.js"></script>
+    <!-- write type="module" in order support import and export functionality -->
     <script src="dist/common.js"></script>
     <script src="dist/dom.js"></script>
     <script src="dist/functionTypes.js"></script>
@@ -23,3 +24,5 @@
 </body>
 
 </html>
+
+<!-- for effficient output and user experience we need to use module bundler to tie all the js files together into a single js file -->
