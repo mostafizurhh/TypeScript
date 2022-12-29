@@ -50,3 +50,23 @@ if (Array.isArray(object1.phone)) {
 else {
     object1.phone.toLowerCase
 }
+
+//function interface
+interface RectangleOptions {
+    width: number,
+    height: number
+}
+
+function drawRectangle(options: RectangleOptions) {
+    let width = options.width;
+    let height = options.height
+}
+
+let threedRectangle = {
+    width: 20,
+    height: 30,
+    length: 40
+}
+
+//drawRectangle(20,30)
+drawRectangle(threedRectangle)
